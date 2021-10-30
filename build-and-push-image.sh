@@ -7,7 +7,7 @@ echo 'building image'
 cd "$IMAGE_NAME"
 
 docker build . -t "aromine2/$IMAGE_NAME:latest"
-docker push "aromine2/$IMAGE_NAME:latest"
+#docker push "aromine2/$IMAGE_NAME:latest"
 
-docker build . -t "aromine2/$IMAGE_NAME:$IMAGE_VERSION"
-docker push "aromine2/$IMAGE_NAME:$IMAGE_VERSION"
+#docker build . -t "aromine2/$IMAGE_NAME:$IMAGE_VERSION"
+#docker push "aromine2/$IMAGE_NAME:$IMAGE_VERSION"
