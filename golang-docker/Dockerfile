@@ -1,3 +1,4 @@
-FROM docker
+FROM golang
 
-COPY --from=golang:1.13-alpine /usr/local/go/ /usr/local/go/
+RUN mv /usr/local/go/bin/go /usr/local/bin/go
+COPY --from=docker /usr/local/bin/docker /usr/local/bin/docker
